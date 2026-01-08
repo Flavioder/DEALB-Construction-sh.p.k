@@ -1,0 +1,206 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO WRAPPER */
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 150vh;
+  color: white;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* LEFT SIDE = TEXT */
+.hero-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px;
+  max-width: 650px;
+  z-index: 2;
+}
+
+.hero-text h5 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.separator {
+  width: 60px;
+  height: 2px;
+  background-color: #fff;
+  margin: 25px 0;
+}
+
+.hero-text h1 {
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 35px 0;
+  color: #d6d6d6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* BUTTON */
+.hero-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* RIGHT SIDE = IMAGE */
+.hero-image {
+  flex: 1;
+  background-image: url("FotoWebit/Lucid_Origin_A_luxurious_modern_villa_with_a_minimalist_archit_1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(69, 65, 65, 0.3);
+}
+
+/* -----------------------------------------------------
+   TABLET RESPONSIVE (768px - 1024px)
+------------------------------------------------------*/
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
+  .hero-content {
+    padding: 50px 40px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-left: 0 !important;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .separator {
+    margin: 25px auto;
+  }
+
+  .hero-btn {
+    margin: 0 auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+/* -----------------------------------------------------
+   MOBILE RESPONSIVE (375px - 768px)
+------------------------------------------------------*/
+@media (max-width: 768px) {
+  .hero {
+    height: 160vh;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .hero-text h5 {
+    font-size: 13px;
+  }
+
+  .separator {
+    background-color: #000;
+    margin: 10px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    line-height: 1.55;
+    padding: 0 10px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .hero-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+/* -----------------------------------------------------
+   SMALL MOBILE (320px - 375px)
+------------------------------------------------------*/
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .hero-image {
+    height: 55vh;
+  }
+}

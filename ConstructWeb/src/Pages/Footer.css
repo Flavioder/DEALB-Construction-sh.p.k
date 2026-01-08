@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  background-color: #111; /* ngjyrë e errët për kontrast */
+  color: #f1f1f1;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer:hover {
+  background-color: #181818;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    font-size: 0.95rem;
+    padding: 20px 12px;
+  }
+}
+
+/* TELEFON */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.85rem;
+    padding: 18px 10px;
+  }
+
+  .footer p {
+    line-height: 1.4;
+  }
+}

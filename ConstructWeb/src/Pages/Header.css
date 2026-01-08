@@ -1,0 +1,82 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  color: white;
+  background-color: #030303;
+}
+.nav-link {
+  text-decoration: none;
+  color: white; /* ose ngjyrën tënde */
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: none !important;
+  color: #f4f4f4; /* hover i butë */
+}
+.logo {
+  height: 50px;
+}
+
+.menu .list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu .list li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.menu .list li a:hover {
+  color: #ff6600;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: white;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.508);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    flex-direction: column;
+  }
+
+  .menu.open {
+    max-height: 300px;
+  }
+
+  .menu .list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+  }
+}

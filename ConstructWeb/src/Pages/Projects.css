@@ -1,0 +1,388 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO SECTION */
+.container-strehim {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/FotoWebit/vilainside.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 40px 20px;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.container-strehim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.strehim-text {
+  position: relative;
+  margin-bottom: 100px;
+  z-index: 2;
+  max-width: 1023px;
+  padding: 20px;
+}
+
+.strehim-text h6 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+}
+
+.strehim-text h1 {
+  font-size: 75px;
+  font-family: Bebas, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.strehim-text p {
+  font-family: Lora, Georgia, "Times New Roman", Times, serif;
+  font-size: 19px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #d6d6d6;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.strehim-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: 0.1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.strehim-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: 0.1px solid rgb(0, 0, 0);
+}
+
+/* BLACK BOX SECTION */
+.box-black {
+  position: relative;
+  background-color: black;
+  color: #d6d6d6;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxblack-text {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  padding: 20px;
+  text-align: center;
+}
+
+.boxblack-text h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+.boxblack-text p {
+  font-size: 19px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* KERKESAT SECTION */
+.kerkesat {
+  position: relative;
+  width: 100%;
+  min-height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/FotoWebit/pexels-itsterrymag-2635038.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.kerkesat-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 10%;
+  background-color: black;
+  width: 700px;
+  height: 715px;
+}
+
+.kerkesat-text {
+  width: 360px;
+  height: 530px;
+  position: relative;
+  margin-right: 20%;
+  text-align: left;
+}
+
+.kerkesat-text h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding-bottom: 30px;
+  letter-spacing: 1.7px;
+}
+
+.kerkesat-text h2 {
+  font-size: 75px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.kerkesat-text p {
+  font-size: 19px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.separator-kerkesat {
+  background-color: white;
+  width: 50px;
+  height: 1px;
+  position: relative;
+  margin-bottom: 70%;
+  margin-right: 20px;
+}
+
+.kerkesat-btn {
+  margin-top: 50px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: 0.1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kerkesat-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 0.1px solid rgb(255, 255, 255);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .kerkesat {
+    min-height: 100vh;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .kerkesat-box {
+    width: 90%;
+    min-height: 70vh;
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+    padding: 15px;
+  }
+
+  .strehim-text h1,
+  .kerkesat-text h2 {
+    font-size: 50px;
+  }
+  .separator-kerkesat {
+    display: none;
+  }
+  .strehim-text p,
+  .kerkesat-text p {
+    font-size: 18px;
+  }
+  .kerkesat-box {
+    width: 500px;
+    height: auto;
+    flex-direction: column;
+    margin-left: 5%;
+    padding: 20px;
+  }
+}
+
+/* Large Phones / Small Tablets */
+@media (max-width: 768px) {
+  .container-strehim {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    min-height: 160vh;
+  }
+  .strehim-text h1,
+  .kerkesat-text h2 {
+    font-size: 76px;
+  }
+  .strehim-text p {
+    font-size: 26px;
+    text-align: left; /* më bukur në mobile për paragraf */
+    text-align-last: left;
+  }
+  .strehim-text h6 {
+    font-size: 17px;
+  }
+  .kerkesat-text p {
+    font-size: 19px;
+
+    text-align: initial;
+  }
+  .kerkesat {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .kerkesat-box {
+    width: 70%;
+    min-height: 70vh;
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+    padding: 15px;
+  }
+  .kerkesat-text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .strehim-btn {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .kerkesat {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .kerkesat-box {
+    width: 90%;
+    min-height: 70vh;
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+    padding: 15px;
+  }
+
+  .separator-kerkesat {
+    display: none; /* heq separator në mobile */
+  }
+
+  .kerkesat-text {
+    width: 100%;
+    text-align: initial;
+    padding: 20px;
+  }
+
+  .kerkesat-text h6 {
+    font-size: 12px;
+  }
+
+  .kerkesat-text h2 {
+    font-size: 28px;
+  }
+
+  .kerkesat-text p {
+    font-size: 16px;
+    text-align: left; /* më bukur në mobile për paragraph justify */
+    text-align-last: left;
+  }
+
+  .kerkesat-btn {
+    margin: 90px auto 0 auto;
+  }
+  .strehim-text h1 {
+    font-size: 28px;
+  }
+
+  .strehim-text p {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+
+  .strehim-text h6 {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .container-strehim {
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .strehim-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1440px) {
+  .strehim-text h1,
+  .kerkesat-text h2 {
+    font-size: 90px;
+  }
+  .strehim-text p,
+  .kerkesat-text p {
+    font-size: 20px;
+  }
+}
