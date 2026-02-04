@@ -2,7 +2,10 @@ import "./Projects.css";
 import Header from "./Header";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
+
 function Projects() {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -16,7 +19,7 @@ function Projects() {
             <br />
             Na kontaktoni, do të jemi të lumtur t'ju këshillojmë!
           </p>
-          <button className="strehim-btn">
+          <button onClick={() => navigate("/contact")} className="strehim-btn">
             KONTAKT I DREJTPËRDREJTË ME NE
           </button>
         </div>
@@ -43,7 +46,12 @@ function Projects() {
               mund të ndryshojnë ndjeshëm dhe kjo duhet të merret parasysh gjatë
               fazave të konsultimit, planifikimit dhe ekzekutimit.
             </p>
-            <button className="kerkesat-btn">NA KONTAKTONI!</button>
+            <button
+              onClick={() => navigate("/contact")}
+              className="kerkesat-btn"
+            >
+              NA KONTAKTONI!
+            </button>
           </div>
         </div>
       </div>

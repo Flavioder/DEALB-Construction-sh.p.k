@@ -1,5 +1,9 @@
 import "./Services.css";
+import { useNavigate } from "react-router-dom";
+
 function Services() {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="services">
@@ -16,7 +20,9 @@ function Services() {
                 <p>
                   Ndërtimi i banesave për nevoja të nivelit <br /> të lartë.
                 </p>
-                <button>MËSO MË SHUMË</button>
+                <button onClick={() => navigate("/projects")}>
+                  MËSO MË SHUMË
+                </button>
               </div>
             </div>
 
