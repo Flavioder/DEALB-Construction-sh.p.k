@@ -40,7 +40,7 @@
 }
 
 .menu .list li a:hover {
-  color: #ff6600;
+  color: #c0932a;
 }
 
 .hamburger {
@@ -62,7 +62,7 @@
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.508);
+    background-color: rgba(0, 0, 0, 0.733);
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease-in-out;

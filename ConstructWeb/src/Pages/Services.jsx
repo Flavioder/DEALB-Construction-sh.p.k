@@ -34,9 +34,8 @@ function Services() {
               <div className="overlay-card">
                 <h2>NDËRTESAT E REJA</h2>
                 <p>
-                  Shtëpi njëfamiljare dhe shumëfamiljare,
-                  <br /> shtëpi me tarraca, shtëpi gjysmë të <br />
-                  shkëputura, shtëpi njëfamiljare.
+                  Shtëpi njëfamiljare dhe shumëfamiljare, shtëpi me tarraca,
+                  shtëpi gjysmë të shkëputura, shtëpi njëfamiljare.
                 </p>
                 <button>MËSO MË SHUMË</button>
               </div>
